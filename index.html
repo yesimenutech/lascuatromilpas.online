@@ -748,20 +748,24 @@
                 <p class="hero-address" id="hero-address" data-es="1985 National Ave Ste 1131, San Diego, CA 92113" data-en="1985 National Ave Ste 1131, San Diego, CA 92113">1985 National Ave Ste 1131, San Diego, CA 92113</p>
                 
                 <div class="hero-actions">
-                    <!-- Motor Menutech -->
-                    <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
-                    <!-- Librería Menutech -->
-                    <script src="https://menutech.xyz/menutechUI.min.js"></script>
+    <!-- Motor Menutech -->
+    <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
+    <!-- Librería Menutech -->
+    <script src="https://menutech.xyz/menutechUI.min.js"></script>
 
-                    <!-- Contenedor Wrapper para Deshabilitar Pedidos Temporalmente -->
-                    <div id="order-disabled-wrapper" style="display: inline-block;">
-                        <menutech-orders id="hero-orders" cuid="0000" ruid="0000" background="#F9DC5C" color="#1A1A1A" data-glf-cuid="0000" data-glf-ruid="0000"></menutech-orders>
-                    </div>
+    <!-- Botón de Ordenar en Línea Actualizado -->
+    <a href="https://lascuatromilpas.onlineordering.io/en/?locationId=1563873&orderMode=in_store_pickup" target="_blank" class="btn btn-primary" data-es="Ordenar en Línea" data-en="Order Online">
+        Order Online
+    </a>
 
-                    <div id="hero-reservations-wrapper" style="display: none;">
-                        <menutech-reservations id="hero-reservations" cuid="0000" ruid="0000" background="#4A7C59" color="#FFFFFF" data-glf-cuid="0000" data-glf-ruid="0000" data-glf-reservation="true"></menutech-reservations>
-                    </div>
+    <div id="hero-reservations-wrapper" style="display: none;">
+        <menutech-reservations id="hero-reservations" cuid="0000" ruid="0000" background="#4A7C59" color="#FFFFFF" data-glf-cuid="0000" data-glf-ruid="0000" data-glf-reservation="true"></menutech-reservations>
+    </div>
 
+    <script>
+        setTimeout(() => { if(window.glfBindButtons) window.glfBindButtons(); }, 1000);
+    </script>
+</div>
                     <script>
                         setTimeout(() => { if(window.glfBindButtons) window.glfBindButtons(); }, 1000);
                         
