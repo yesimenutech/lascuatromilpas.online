@@ -524,13 +524,13 @@
         /* Info Section */
         .info-cards {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
             margin-top: 60px;
         }
         .info-card {
             background: var(--color-white);
-            padding: 50px 30px;
+            padding: 40px 20px;
             text-align: center;
             border: 6px solid var(--color-text-dark);
             box-shadow: 12px 12px 0px var(--color-red);
@@ -538,12 +538,13 @@
         }
         .info-card:nth-child(2) { box-shadow: 12px 12px 0px var(--color-yellow); }
         .info-card:nth-child(3) { box-shadow: 12px 12px 0px var(--color-green); }
+        .info-card:nth-child(4) { box-shadow: 12px 12px 0px var(--color-text-dark); }
         
         .info-card:hover { transform: translateY(-8px); }
         
         .info-heading {
             font-family: var(--font-title);
-            font-size: 3.5rem;
+            font-size: 3rem;
             color: var(--color-text-dark);
             margin-bottom: 25px;
             letter-spacing: 2px;
@@ -555,10 +556,11 @@
         }
         .info-card:nth-child(2) .info-heading { text-decoration-color: var(--color-yellow); }
         .info-card:nth-child(3) .info-heading { text-decoration-color: var(--color-green); }
+        .info-card:nth-child(4) .info-heading { text-decoration-color: var(--color-yellow); }
         
         .info-card p {
             color: var(--color-text-dark);
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 800;
         }
 
@@ -654,7 +656,7 @@
             .about-grid { grid-template-columns: 1fr; gap: 60px; }
             .about-text { padding: 40px 25px; }
             .about-visuals { margin-top: 40px; max-width: 600px; margin-inline: auto; }
-            .info-cards { grid-template-columns: 1fr; }
+            .info-cards { grid-template-columns: 1fr 1fr; }
         }
 
         @media (max-width: 768px) {
@@ -679,6 +681,7 @@
             .title-display { font-size: 4rem; }
             .theme-badge { top: -20px; right: -10px; width: 120px; height: 120px; font-size: 1.4rem; }
             .theme-badge span { font-size: 2rem; }
+            .info-cards { grid-template-columns: 1fr; }
         }
     </style>
     
@@ -694,6 +697,10 @@
             "aboutImg1": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789054157/IMG_7976_apyiy4.jpg",
             "aboutImg2": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789054158/Image_bezxbl.jpg",
             "gallery": [
+                "img/Small Chorizo bowl with Rice.jpg",
+                "img/Rice, bean and tamal bowl.jpg",
+                "img/Roll tacos topped with everything.jpg",
+                "img/Pork tacos topped with everything.jpg",
                 "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789054219/LasCuatroMilpas_12.09.25_arleneibarra-55_zquhpi.jpg",
                 "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789054219/LasCuatroMilpas_12.09.25_arleneibarra-54_zbdfr9.jpg",
                 "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789054220/LasCuatroMilpas_12.09.25_arleneibarra-50_yaayoo.jpg",
@@ -703,11 +710,17 @@
                 "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789054223/LasCuatroMilpas_12.09.25_arleneibarra-48_zd0lme.jpg",
                 "https://res.cloudinary.com/dzklt0a5u/image/upload/v1789054223/LasCuatroMilpas_12.09.25_arleneibarra-16_aq1gig.jpg"
             ],
-            "contact": { "phone": "(619) 234 - 4460", "address": "1985 National Ave Ste 1131, San Diego, CA 92113", "hours": "Monday to Friday: 8AM – 3PM\nSaturday: 7AM – 3PM" },
+            "galleryLabels": {
+                "img/Small Chorizo bowl with Rice.jpg": "Small Chorizo bowl with Rice",
+                "img/Rice, bean and tamal bowl.jpg": "Rice, bean and tamal bowl",
+                "img/Roll tacos topped with everything.jpg": "Roll tacos topped with everything (sour cream, lettuce, tomato sauce, and cotija cheese)",
+                "img/Pork tacos topped with everything.jpg": "Pork tacos topped with everything (lettuce and cotija cheese)"
+            },
+            "contact": { "phone": "(619) 234 - 4460", "address": "1985 National Ave Ste 1131, San Diego, CA 92113", "hours": "Monday to Friday: 8AM – 3PM\nSaturday: 7AM – 3PM", "payments": "We accept all payment methods (Credit & Debit Cards)" },
             "socials": [ { "platform": "instagram", "url": "https://www.instagram.com/lascuatromilpas.sd/" } ],
-            "paragraphs": { "about": "Since 1933, Las Cuatro Milpas has stood proudly in the heart of Barrio Logan built on family, hard work, tradition, and a love for our community. What began as a small family restaurant grew into something much greater: a place where generations have gathered, where familiar faces became family, and where the smell and taste of our food became part of countless memories. For more than 90 years, our recipes have been passed down from generation to generation. We still believe in doing things the way our family taught us with our hands, with patience, and with corazón. The neighborhood around us may have changed, but the traditions inside our kitchen have remained. Las Cuatro Milpas is more than the food we serve. It is the story of the generations who came before us, the sacrifices they made, and the community that has stood beside our family throughout the years. Today, we are honored to carry their legacy forward and to continue serving the Barrio that has always been our home." },
+            "paragraphs": { "about": "Since 1933, Las Cuatro Milpas has stood proudly in the heart of Barrio Logan built on family, hard work, tradition, and a love for our community. What began as a small local tortilla factory, grew into something much more impactful. A place where generations have gathered, where familiar faces became family, and where the smell and taste of our food became part of countless memories. For more than 90 years, our recipes have been passed down from generation to generation. We still believe in doing things the way our family taught us with our hands, with patience, and with corazón. The neighborhood around us may have changed, but the traditions inside our kitchen have remained. Las Cuatro Milpas is more than the food we serve. It is the story of the generations who came before us, the sacrifices they made, and the community that has stood beside our family throughout the years. Today, we are honored to carry their legacy forward and to continue serving the San Diego community." },
             "titles": { "about-title": "We are Las Cuatro Milpas", "about-subtitle": "About Us", "gallery-title": "Delicious Mexican Food", "gallery-subtitle": "Love At First Bite", "info-title": "Information", "info-subtitle": "Visit Us" },
-            "info": { "hours": "Monday to Friday: 8AM – 3PM\nSaturday: 7AM – 3PM", "phone": "(619) 234 - 4460", "address": "1985 National Ave Ste 1131, San Diego, CA 92113" }
+            "info": { "hours": "Monday to Friday: 8AM – 3PM\nSaturday: 7AM – 3PM", "phone": "(619) 234 - 4460", "address": "1985 National Ave Ste 1131, San Diego, CA 92113", "payments": "We accept all payment methods (Credit & Debit Cards)" }
         };
     </script>
 </head>
@@ -742,30 +755,27 @@
                 </div>
                 
                 <h1 class="title-display">
-                    TRADITION <br><span class="highlight">& ELOTES</span>
-                </h1>
-                
+    <span data-es="donde cada" data-en="where every">where every</span>
+    <br>
+    <span class="highlight" data-es="bocado es un recuerdo" data-en="bite is a memory">bite is a memory</span>
+</h1>
                 <p class="hero-address" id="hero-address" data-es="1985 National Ave Ste 1131, San Diego, CA 92113" data-en="1985 National Ave Ste 1131, San Diego, CA 92113">1985 National Ave Ste 1131, San Diego, CA 92113</p>
                 
                 <div class="hero-actions">
-    <!-- Motor Menutech -->
-    <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
-    <!-- Librería Menutech -->
-    <script src="https://menutech.xyz/menutechUI.min.js"></script>
+                    <!-- Motor Menutech -->
+                    <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
+                    <!-- Librería Menutech -->
+                    <script src="https://menutech.xyz/menutechUI.min.js"></script>
 
-    <!-- Botón de Ordenar en Línea Actualizado -->
-    <a href="https://lascuatromilpas.onlineordering.io/en/?locationId=1563873&orderMode=in_store_pickup" target="_blank" class="btn btn-primary" data-es="Ordenar en Línea" data-en="Order Online">
-        Order Online
-    </a>
+                    <!-- Botón de Ordenar en Línea Actualizado -->
+                    <a href="https://lascuatromilpas.onlineordering.io/en/?locationId=1563873&orderMode=in_store_pickup" target="_blank" class="btn btn-primary" data-es="Ordenar en Línea" data-en="Order Online">
+                        Order Online
+                    </a>
 
-    <div id="hero-reservations-wrapper" style="display: none;">
-        <menutech-reservations id="hero-reservations" cuid="0000" ruid="0000" background="#4A7C59" color="#FFFFFF" data-glf-cuid="0000" data-glf-ruid="0000" data-glf-reservation="true"></menutech-reservations>
-    </div>
+                    <div id="hero-reservations-wrapper" style="display: none;">
+                        <menutech-reservations id="hero-reservations" cuid="0000" ruid="0000" background="#4A7C59" color="#FFFFFF" data-glf-cuid="0000" data-glf-ruid="0000" data-glf-reservation="true"></menutech-reservations>
+                    </div>
 
-    <script>
-        setTimeout(() => { if(window.glfBindButtons) window.glfBindButtons(); }, 1000);
-    </script>
-</div>
                     <script>
                         setTimeout(() => { if(window.glfBindButtons) window.glfBindButtons(); }, 1000);
                         
@@ -777,7 +787,7 @@
                                 ? 'La función de pedidos en línea no está habilitada por el momento.' 
                                 : 'Online ordering is not enabled at the moment.';
                             alert(message);
-                        }, true); // Fase de captura para interceptar antes de que actúe el widget de GloriaFood
+                        }, true);
                     </script>
                 </div>
             </div>
@@ -795,12 +805,12 @@
                     <h2 class="title-section" id="about-title" data-es="Somos <span class='text-red'>Las Cuatro Milpas</span>" data-en="We are <span class='text-red'>Las Cuatro Milpas</span>">We are <span class="text-red">Las Cuatro Milpas</span></h2>
                     
                     <div class="slogan-box">
-                        <p data-es="¡Hecho a mano, con paciencia y con corazón!" data-en="Made by hand, with patience and corazón!">Made by hand, with patience and corazón!</p>
+                        <p id="slogan-text" data-es="¡Donde cada bocado es un recuerdo!" data-en="Where every bite is a memory">Where every bite is a memory</p>
                     </div>
                     
-                    <p id="about-p1" data-es="Desde 1933, Las Cuatro Milpas se ha mantenido con orgullo en el corazón de Barrio Logan, construido sobre la familia, el trabajo duro, la tradición y el amor por nuestra comunidad. Lo que comenzó como un pequeño restaurante familiar se convirtió en algo mucho más grande: un lugar donde las generaciones se han reunido, donde las caras conocidas se convirtieron en familia, y donde el olor y el sabor de nuestra comida se convirtió en parte de innumerables recuerdos." data-en="Since 1933, Las Cuatro Milpas has stood proudly in the heart of Barrio Logan built on family, hard work, tradition, and a love for our community. What began as a small family restaurant grew into something much greater: a place where generations have gathered, where familiar faces became family, and where the smell and taste of our food became part of countless memories."></p>
+                    <p id="about-p1" data-es="Desde 1933, Las Cuatro Milpas se ha mantenido con orgullo en el corazón de Barrio Logan, construido sobre la familia, el trabajo duro, la tradición y el amor por nuestra comunidad. Lo que comenzó como una pequeña fábrica de tortillas local, se convirtió en algo mucho más impactante. Un lugar donde las generaciones se han reunido, donde las caras conocidas se convirtieron en familia, y donde el olor y el sabor de nuestra comida se convirtió en parte de innumerables recuerdos." data-en="Since 1933, Las Cuatro Milpas has stood proudly in the heart of Barrio Logan built on family, hard work, tradition, and a love for our community. What began as a small local tortilla factory, grew into something much more impactful. A place where generations have gathered, where familiar faces became family, and where the smell and taste of our food became part of countless memories."></p>
                     <p id="about-p2" data-es="Durante más de 90 años, nuestras recetas han pasado de generación en generación. Todavía creemos en hacer las cosas como nuestra familia nos enseñó: con nuestras manos, con paciencia y con corazón. El vecindario que nos rodea puede haber cambiado, pero las tradiciones dentro de nuestra cocina han permanecido." data-en="For more than 90 years, our recipes have been passed down from generation to generation. We still believe in doing things the way our family taught us with our hands, with patience, and with corazón. The neighborhood around us may have changed, but the traditions inside our kitchen have remained."></p>
-                    <p id="about-p3" data-es="Las Cuatro Milpas es más que la comida que servimos. Es la historia de las generaciones que nos precedieron, los sacrificios que hicieron y la comunidad que ha estado al lado de nuestra familia a lo largo de los años. Hoy, nos honra llevar adelante su legado y continuar sirviendo al Barrio que siempre ha sido nuestro hogar." data-en="Las Cuatro Milpas is more than the food we serve. It is the story of the generations who came before us, the sacrifices they made, and the community that has stood beside our family throughout the years. Today, we are honored to carry their legacy forward and to continue serving the Barrio that has always been our home."></p>
+                    <p id="about-p3" data-es="Las Cuatro Milpas es más que la comida que servimos. Es la historia de las generaciones que nos precedieron, los sacrificios que hicieron y la comunidad que ha estado al lado de nuestra familia a lo largo de los años. Hoy, nos honra llevar adelante su legado y continuar sirviendo a la comunidad de San Diego." data-en="Las Cuatro Milpas is more than the food we serve. It is the story of the generations who came before us, the sacrifices they made, and the community that has stood beside our family throughout the years. Today, we are honored to carry their legacy forward and to continue serving the San Diego community."></p>
                 </div>
                 
                 <div class="about-visuals">
@@ -852,6 +862,10 @@
                     <h4 class="info-heading" data-es="Dirección" data-en="Address">Address</h4>
                     <p id="info-address" data-es="1985 National Ave Ste 1131, San Diego, CA 92113" data-en="1985 National Ave Ste 1131, San Diego, CA 92113">1985 National Ave Ste 1131, San Diego, CA 92113</p>
                 </div>
+                <div class="info-card">
+                    <h4 class="info-heading" data-es="Formas de Pago" data-en="Payment Methods">Payment Methods</h4>
+                    <p id="info-payments" data-es="Aceptamos todo tipo de pago (Tarjetas de crédito, débito y efectivo)" data-en="We accept all payment methods (Credit & Debit Cards / Cash)">We accept all payment methods (Credit & Debit Cards / Cash)</p>
+                </div>
             </div>
         </div>
     </section>
@@ -864,6 +878,7 @@
                     <h4 class="footer-title" data-es="Contáctanos" data-en="Contact Us">Contact Us</h4>
                     <p class="footer-text" id="footer-address" data-es="1985 National Ave Ste 1131, San Diego, CA 92113" data-en="1985 National Ave Ste 1131, San Diego, CA 92113">1985 National Ave Ste 1131, San Diego, CA 92113</p>
                     <p class="footer-text" id="footer-phone" data-es="Teléfono: (619) 234 - 4460" data-en="Phone: (619) 234 - 4460">Phone: (619) 234 - 4460</p>
+                    <p class="footer-text" id="footer-payments" data-es="Aceptamos todo tipo de pago (Con tarjeta)" data-en="We accept all payment methods (Card payments)">We accept all payment methods (Card payments)</p>
                     <div id="social-icons" class="social-links">
                         <!-- Social Networks dynamically added here -->
                     </div>
@@ -1084,9 +1099,8 @@
                 if (container) {
                     container.innerHTML = data.socials.map(s => {
                         let iconPlatform = s.platform.toLowerCase();
-                        // Replace twitter with tiktok if present
                         if(iconPlatform === 'twitter' && !data.socials.find(x => x.platform.toLowerCase() === 'tiktok')) {
-                             iconPlatform = 'tiktok';
+                            iconPlatform = 'tiktok';
                         }
                         return `
                         <a href="${s.url}" target="_blank" class="social-btn" aria-label="${iconPlatform}">
@@ -1100,11 +1114,17 @@
             if (data.gallery) {
                 const container = document.getElementById('gallery-container');
                 if (container) {
-                    container.innerHTML = data.gallery.map(img => `
+                    const labels = data.galleryLabels || {};
+                    container.innerHTML = data.gallery.map(img => {
+                        const srcUrl = img.startsWith('http') ? optimizeCloudinaryUrl(img, { width: 500, height: 500, crop: 'fill' }) : img;
+                        const labelText = labels[img] ? `<div class="bento-label">${labels[img]}</div>` : '';
+                        return `
                         <div class="bento-item">
-                            <img src="${optimizeCloudinaryUrl(img, { width: 500, height: 500, crop: 'fill' })}" loading="lazy" width="400" height="400" alt="Delicious Food">
+                            <img src="${srcUrl}" loading="lazy" width="400" height="400" alt="Delicious Food">
+                            ${labelText}
                         </div>
-                    `).join('');
+                        `;
+                    }).join('');
                 }
             }
 
